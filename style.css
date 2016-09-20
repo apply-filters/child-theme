@@ -7,3 +7,6 @@ Version:      1.0.1
 */
 
 @import url( '../podcaster/style.css' );
+
+.widget.widget_text .textwidget { padding: 0; }
+.sidebar .widget .widget { padding: 0; }
