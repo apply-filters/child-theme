@@ -118,45 +118,4 @@ get_header(); ?>
 		</div><!-- .container -->
 	</div><!-- .list-of-episodes -->
 
-	<div class="fromtheblog list">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2 class="title"><?php echo __('From the Blog', 'thstlang') ?></h2>
-						<?php
-						$args = array( 'posts_per_page' => 4, 'paged' => get_query_var( 'paged' ), 'ignore_sticky_posts' => true );
-						$fromblog_posts = new WP_Query( $args );
-
-						if( $fromblog_posts->have_posts() ) : while( $fromblog_posts->have_posts() ) : $fromblog_posts->the_post(); ?>
-						<article <?php post_class(); ?>>
-							<div class="inside clearfix">
-								<div class="cont post-header">
-									<span>
-										<a class="user_img_link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-											<img title="" rel="author" src="<?php echo get_avatar_url(get_avatar( get_the_author_meta( 'ID' ), 32 )); ?>" alt="author" class="author_userpic" />
-										</a>
-									</span>
-									<span><?php the_author(); ?></span>
-								</div>
-								<div class="cont_large post-content">
-									<span class="cats"><?php the_category('</span> <span class="cats"> '); ?></span>
-									<span class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
-								</div><!-- .post-header -->
-
-								<div class="cont date post-footer">
-									<span><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></span>
-								</div><!-- .post-footer -->
-							</div><!-- .inside -->
-						</article>
-						<?php endwhile; ?>
-					<?php endif; wp_reset_query(); ?>
-
-					<div class="button-container">
-						<a class="butn small blog-button" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><?php echo __('Go to Blog', 'thstlang') ?></a>
-					</div>
-				</div><!-- .col -->
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</div>
-
 <?php get_footer(); ?>
