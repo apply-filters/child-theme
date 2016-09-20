@@ -31,6 +31,6 @@
 	</div>
 	<?php endif; ?>
 	
-	<?php dynamic_sidebar( 'sidebar_single' ); ?>
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
 </div>
