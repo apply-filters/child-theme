@@ -1,17 +1,15 @@
 <?php
 
 function apply_filters_register_sidebars() {
-	register_sidebar(		
-		array(			
-			'id' => 'sidebar_single',			
-			'name' => __( 'Sidebar Single View', 'thstlang' ),			
-			'description' => __( 'This sidebar will appear on the single view of your blog.', 'thstlang' ),			
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',			
-			'after_widget' => '</div>',			
-			'before_title' => '<h3>',			
-			'after_title' => '</h3>'		
-		)
-	);	
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'twentysixteen' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );	
 }
 add_action( 'widgets_init', 'apply_filters_register_sidebars' );
 
