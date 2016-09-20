@@ -437,7 +437,7 @@ body.post-type-archive-podcast.archive .list-of-episodes article.list .post-cont
   color: #646464;
 }
 body.post-type-archive-podcast.archive .list-of-episodes article.list .post-footer {
-  display: block;
+  display: block!important;
 }
 body.post-type-archive-podcast.archive .archive-navigation {
   margin-top: 25px;
