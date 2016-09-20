@@ -68,8 +68,7 @@ class Apply_Filters_Theme {
 			'podcast' 			=> 'Episodes',
 			'about'				=> 'About',
 			'sponsorship'		=> 'Sponsorship',
-			'submit-topic-idea'	=> 'Submit Topic Idea',
-			'blog'				=> 'Blog',
+			'submit-topic-idea'	=> 'Submit Topic Idea'
 		);
 
 		ob_start(); ?>
