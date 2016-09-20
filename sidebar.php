@@ -30,5 +30,7 @@
 		<?php ninja_forms_display_form( 1 ); ?>
 	</div>
 	<?php endif; ?>
+	
+	<?php dynamic_sidebar( 'sidebar_single' ); ?>
 
 </div>
