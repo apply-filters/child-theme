@@ -33,6 +33,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large
 							<span class="mini-title"><?php echo get_the_date(); ?> &bull; <?php echo $series; ?></span>
 							<?php endif; ?>
 							<h2><?php the_title(); ?></h2>
+							<p><span class="date"><?php echo get_the_date(); ?></span></p>
 							<div class="audio">
 								<?php if($file != '') {
 									echo '<div class="audio_player">' . do_shortcode('[audio mp3="' . $file . '"][/audio]</div><!--audio_player-->');
