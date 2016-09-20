@@ -80,6 +80,10 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.widget.widget_text .textwidget {
+  padding-top:0;
+  padding-bottom:0;
+}
 .sidebar .subscribe-with-itunes-widget a.subscribe-with-itunes {
   background: url("../img/itunes-subcribe.png") no-repeat 0 0 transparent;
   width: 108px;
